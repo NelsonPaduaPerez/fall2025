@@ -33,6 +33,7 @@ app.get("/insertMovies", async (req, res) => {
       ];
       result = await collection.insertMany(moviesArray);
       res.send(`<h2>Inserted ${result.insertedCount} movies</h2>`);
+      /* Comment Here */
    } catch (e) {
       console.error(e);
    } finally {
